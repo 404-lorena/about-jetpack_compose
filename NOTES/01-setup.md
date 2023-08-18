@@ -1,0 +1,20 @@
+## [Jetpack Compose Tutorial](https://developer.android.com/jetpack/compose/tutorial?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fjetpack-compose-for-android-developers-1%23article-https%3A%2F%2Fdeveloper.android.com%2Fjetpack%2Fcompose%2Ftutorial)
+- Create new app with support for Compose in Android Studio.
+    - [ ] Select Empty Activity for a Project Template
+    - [ ] Configure project
+        - Name
+        - Package Name
+        - Save Location
+        - Language: Kotlin
+        - Minimum API: API level 21 (or higher)
+    - [ ] Set up Compose for an existing app
+        - Upgrade compileSdk 34
+        - Upgrade defaultConfig { targetSdk 34 }
+        - Confirm that buildFeatures { compose = true }
+        - Confirm that composeOptions { kotlinCompilerExtensionVersion = "VERSION"}
+            - NOTE: The version should be left to the default, but you can consult the [Compatibility Map](https://developer.android.com/jetpack/androidx/releases/compose-kotlin)
+        - Confirm dependencies
+            - Material 3: implementation("androidx.compose.material3:material3")
+                - NOTE: You can add the latest release at the end ([i.e. 1.2.0-alpha05](https://developer.android.com/jetpack/androidx/releases/compose-material3))
+            - Android Studio Preview support
+            - UI Tests
